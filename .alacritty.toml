@@ -1,0 +1,21 @@
+[colors.primary]
+  # Default colors
+    background = '0x201917'
+    foreground = '0xcbd7da'
+[colors.normal]
+    black=   '0x353432'
+    red=     '0x94554d'
+    green=   '0x437f5d'
+    yellow=  '0xd3925b'
+    blue=    '0x525979'
+    magenta= '0x816891'
+    cyan=    '0x85b69a'
+    white=   '0x807880'
+
+[window]
+  decorations = "Buttonless"
+
+[font]
+  normal = { family = "Spleen", style = "Medium" }
+  size = 12.0
+  offset = { x = 1, y = 0 }
