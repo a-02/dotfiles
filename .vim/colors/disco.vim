@@ -289,7 +289,7 @@ else
 	call <SID>set_colors("Comment", s:dimtwo, "", "")
 endif
 
-call <SID>set_colors("Constant", s:green, "", "")
+call <SID>set_colors("Constant", s:dimblue, "", "")
 hi link String    Constant
 hi link Character Constant
 hi link Number    Constant
@@ -297,13 +297,13 @@ hi link Boolean   Constant
 hi link Float     Constant
 
 if s:gt_eight " Only turn off bold if we have enough colors
-	call <SID>set_colors("Identifier", s:cyan, "", "NONE")
+	call <SID>set_colors("Identifier", s:dimyellow, "", "NONE")
 else
 	call <SID>set_colors("Identifier", s:cyan, "", "")
 endif
 hi link Function Identifier
 
-call <SID>set_colors("Statement", s:magenta, "", "")
+call <SID>set_colors("Statement", s:blue, "", "")
 hi link Conditional Statement
 hi link Repeat      Statement
 hi link Label       Statement
@@ -311,13 +311,13 @@ hi link Operator    Statement
 hi link Keyword     Statement
 hi link Exception   Statement
 
-call <SID>set_colors("PreProc", s:blue, "", "")
+call <SID>set_colors("PreProc", s:magenta, "", "")
 hi link Include   PreProc
 hi link Define    PreProc
 hi link Macro     PreProc
 hi link PreCondit PreProc
 
-call <SID>set_colors("Type", s:yellow, "", "")
+call <SID>set_colors("Type", s:green, "", "")
 hi link StorageClass Type
 hi link Structure    Type
 hi link Typedef      Type
