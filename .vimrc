@@ -1,5 +1,11 @@
 set number
+set noautoindent
 set background=dark
+set tabstop=2
+set softtabstop=0
+set shiftwidth=2
+set expandtab
+set number ruler
 colorscheme disco
 syntax on
 filetype plugin indent on
@@ -20,6 +26,7 @@ Plug 'neoclide/coc.nvim'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
+Plug 'wookayin/fzf-ripgrep.vim'
 
 call plug#end()
 
@@ -28,6 +35,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> kk <C-o>
+nmap <silent> ii <C-i>
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call ShowDocumentation()<CR>
