@@ -6,6 +6,7 @@ set softtabstop=0
 set shiftwidth=2
 set expandtab
 set number ruler
+set backupcopy=yes
 colorscheme disco
 syntax on
 filetype plugin indent on

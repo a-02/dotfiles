@@ -131,10 +131,19 @@ source ~/.bash-powerline.sh
 LS_COLORS='*.hs=36;40'
 alias mwb='cd ~/mercury-web-backend && nix develop'
 alias mw='cd ~/mercury-web && nix develop'
-alias ls='exa --long --grid --header --git'
+alias ls='eza --long --grid --header'
 alias gs='git status'
 alias v='vim'
+alias pgadmin='/usr/pgadmin4/bin/pgadmin4'
+alias box="ssh seth@65.21.65.175 -L 3000:localhost:3000 -L 3001:localhost:3001 -L 8080:localhost:8080 -L 55432:localhost:5432 -L 6006:localhost:6006"
+alias pic="slurp | grim -g - - | wl-copy"
 . "$HOME/.cargo/env"
+export TERM=xterm-256color
+
+alias obsidian="flatpak run md.obsidian.Obsidian"
+
+export IROH_BIN_PATH="/home/nks/.local/bin"
+export PATH="$IROH_BIN_PATH:$PATH"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
